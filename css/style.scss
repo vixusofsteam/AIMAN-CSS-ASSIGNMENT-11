@@ -347,30 +347,101 @@ $opensansBold: 'opensans bold';
         }
         >.review {
             display: flex;
+            flex-wrap: wrap;
             height: 250px;
             place-items: center;
             box-shadow: 0 0 50px #e4e4e4c8;
             padding-bottom: 20px;
             >img {
+                display: flex;
                 padding: 20px;
             }
             >p {
-                display: inline-block;
                 text-align: center;
                 font-size: 17px;
                 text-wrap: balance;
-                vertical-align: top;
             }
             >h4 {
-                display: flex;
                 text-align: center;
-                vertical-align: top;
+                font-size: 20px;
             }
             >h5 {
-                display: flex;
                 text-align: center;
                 color: #0b416d;
-                vertical-align: top;
+            }
+        }
+    }
+    >.footer {
+        background: #242424;
+        padding: 250px 0;
+        padding-bottom: 50px;
+        >.containerbottom {
+            max-width: 1170px;
+            margin: auto;
+            >.row {
+                display: flex;
+                flex-wrap: wrap;
+                >.footer-col {
+                    width: 25%;
+                    padding: 10px 15px;
+                    >h4 {
+                        font-size: 18px;
+                        color: #fff;
+                        margin-bottom: 30px;
+                    }
+                    >ul{
+                        list-style: none;
+                        color: #9b9b9b;
+                    }
+                    >form {
+                        >input[type="text"] {
+                            width: 300px;
+                            height: 35px;
+                            padding-left: 20px;
+                        }
+                    }
+                    >button {
+                        background: #0b416d;
+                        color: #fff;
+                        border-width: 0;
+                        width: 200px;
+                        height: 35px;
+                        margin-top: 15px;
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    >.finalarea {
+        width: 100%;
+        height: 600px;
+        background: #242424;
+        >h4 {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 60px;
+        }
+        >.smicons {
+            padding: 15px;
+            text-align: center;
+            > a {
+                color: #242424;
+                line-height: 30px;
+                font-size: 30px;
+                margin: 3px;
+                text-decoration: none;
+                > i {
+                    line-height: 30px;
+                    border: 4px solid #ececec;
+                    padding: 5px;
+                    border-radius: 30px;
+                    font-size: 30px;
+                    background-color: #ffffff;
+                }
             }
         }
     }
