@@ -336,38 +336,41 @@ $opensansBold: 'opensans bold';
     >.area9 {
         background: #fff;
         width: 100%;
-        height: 400px;
+        height: 494px;
         padding: 50px;
         padding-left: 210px;
         padding-right: 210px;
-        display: grid;
-        grid-gap: 25px;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
         >.circlearrow {
-            line-height: 400px;
+            line-height: 300px;
+            margin-right: 50px;
         }
         >.review {
-            display: grid;
+            display: flex;
+            height: 250px;
             place-items: center;
             box-shadow: 0 0 50px #e4e4e4c8;
             padding-bottom: 20px;
             >img {
                 padding: 20px;
-                object-fit: cover;
-                display: inline-block;
             }
             >p {
                 display: inline-block;
                 text-align: center;
                 font-size: 17px;
-                padding: 20px;
-                text-wrap: wrap;
+                text-wrap: balance;
+                vertical-align: top;
             }
             >h4 {
-                display: inline-block;
+                display: flex;
+                text-align: center;
+                vertical-align: top;
             }
             >h5 {
-                display: inline-block;
+                display: flex;
+                text-align: center;
+                color: #0b416d;
+                vertical-align: top;
             }
         }
     }
